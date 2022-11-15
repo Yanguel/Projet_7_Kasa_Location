@@ -55,7 +55,8 @@ a:visited {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   .navAPropos {
     padding-left: 20px;

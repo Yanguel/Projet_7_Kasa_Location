@@ -30,6 +30,7 @@
   margin-left: 20px;
   width: 250px;
   color: #ffffff;
+  font-size: 18px;
 }
 a:visited {
   color: white;
@@ -40,14 +41,15 @@ a:visited {
   justify-content: center;
   align-items: center;
   margin: 50px 80px 50px 80px;
-  border-radius: 25px;
   position: relative;
+}
+.imgBannerHome {
   background-image: url(../assets/imageHome.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.imgBannerHome {
+  filter: brightness(0.9);
+  border-radius: 25px;
   width: 100%;
   height: 223px;
 }
@@ -89,8 +91,8 @@ a:visited {
     justify-content: center;
   }
   .imgBannerHome {
-    width: 100%;
     height: 111px;
+    background-image: url(../assets/imageHomePhone.png);
   }
   .divTextImg {
     margin-left: 10px;
@@ -105,8 +107,14 @@ a:visited {
     margin-right: 0px;
     padding: 0px;
     background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .photoLogement {
+    width: 100%;
   }
   #root {
-    min-width: 374px;
+    min-width: 320px;
   }
 }

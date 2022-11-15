@@ -16,14 +16,17 @@
   margin-bottom: 20px;
 }
 .accordionTitle {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #f06060;
-  padding: 1rem;
   border-radius: 5px;
+  padding-left: 15px;
+  border-radius: 5px;
+  height: 47px;
+  padding-right: 30px;
 }
 .accordionTitle:hover,
 .active .accordionTitle {
@@ -72,6 +75,7 @@
   }
   .accordionTitle {
     font-size: 13px;
-    padding: 10px;
+    height: 30px;
+    padding-right: 5px;
   }
 }

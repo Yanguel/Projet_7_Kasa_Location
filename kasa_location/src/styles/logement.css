@@ -92,7 +92,8 @@ ul,
 }
 .portraitHote {
   border-radius: 50% 50% 50% 50% / 48% 50% 50% 52%;
-  width: 80px;
+  width: 64px;
+  height: 64px;
   margin-left: 10px;
 }
 /* Responsive Tablette */

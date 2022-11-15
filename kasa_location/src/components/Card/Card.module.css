@@ -17,10 +17,10 @@
 @media screen and (max-width: 767px) {
   .card {
     margin: 10px 20px 10px 20px;
-    width: 335px;
     height: 255px;
+    width: auto;
   }
   #root {
-    min-width: 374px;
+    min-width: 320px;
   }
 }

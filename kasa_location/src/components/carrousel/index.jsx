@@ -33,7 +33,16 @@ export default function Slider() {
     ) : (
       ''
     )
-
+  // Condition afin d'afficher ou non les flèches.
+  const VectorOrnot =
+    logement.pictures.length > 1 ? (
+      <span>
+        <BtnSlider moveSlide={nextSlide} direction={'next'} />
+        <BtnSlider moveSlide={prevSlide} direction={'prev'} />
+      </span>
+    ) : (
+      ''
+    )
   return (
     <div className="container-slider">
       {logement.pictures.map((obje, index) => {
@@ -50,8 +59,7 @@ export default function Slider() {
               alt={`Logement ${logement.title}`}
               className="picturesLogement active"
             ></img>
-            <BtnSlider moveSlide={nextSlide} direction={'next'} />
-            <BtnSlider moveSlide={prevSlide} direction={'prev'} />
+            {VectorOrnot}
           </div>
         )
       })}

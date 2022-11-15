@@ -1,18 +1,13 @@
-import { useEffect } from 'react'
 import data from './../../data/data.json'
 import Card from '../../components/Card'
 import '../../styles/homePage.css'
 import '../../styles/normalize.css'
 
 function Home() {
-  useEffect(() => {
-    console.log(data)
-  })
   return (
     <div className="App">
       <section className="bannerImg">
         <span className="imgBannerHome"></span>
-
         <div className="divTextImg">
           <h1 className="textImg">Chez vous, partout et ailleurs</h1>
         </div>
