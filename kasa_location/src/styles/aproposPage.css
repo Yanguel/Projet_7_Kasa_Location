@@ -16,7 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(0.9);
+  filter: brightness(60%);
 }
 .imgBanner {
   width: 100%;
@@ -59,10 +59,6 @@
   .bannerApropos {
     margin: 20px 20px 20px 20px;
     background-image: url(../assets/banniereAproposPhone.png) !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.9);
   }
   .accordions {
     width: 100%;
