@@ -75,6 +75,9 @@ ul,
 .accordionEquipement {
   width: 45%;
 }
+.titreAccordionsLogement {
+  margin: 0px;
+}
 .divHost {
   display: flex;
   align-items: flex-end;
@@ -91,4 +94,66 @@ ul,
   border-radius: 50% 50% 50% 50% / 48% 50% 50% 52%;
   width: 80px;
   margin-left: 10px;
+}
+/* Responsive Tablette */
+@media screen and (max-width: 1023px) {
+}
+
+/* Responsive Téléphone */
+@media screen and (max-width: 767px) {
+  .titleAndHost {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-bottom: 0px;
+  }
+  .divHost {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .accordionsLogement {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordionDescription,
+  .accordionEquipement {
+    width: 100%;
+  }
+  #sectionLogement {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .logementTitle {
+    font-size: 18px;
+  }
+  .logementLocation {
+    font-size: 14px;
+  }
+  .liTags {
+    font-size: 10px;
+    height: 18px;
+  }
+  .hostName {
+    font-size: 15px;
+  }
+  .portraitHote {
+    width: 40px;
+    height: 40px;
+  }
+  .equipementAccordion,
+  .descriptionAccordions {
+    font-size: 12px;
+    min-height: auto;
+  }
+  .starsSize {
+    width: 20px;
+    height: 20px;
+  }
+  .stars {
+    margin-top: 0px;
+  }
 }

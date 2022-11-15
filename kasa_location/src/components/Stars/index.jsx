@@ -8,9 +8,19 @@ function Rate({ logement }) {
     <div className="stars">
       {arrayRating.map((ratingElem) =>
         logement >= ratingElem ? (
-          <img src={Star} key={ratingElem.toString()} alt="étoile rempli" />
+          <img
+            src={Star}
+            key={ratingElem.toString()}
+            alt="étoile rempli"
+            className="starsSize"
+          />
         ) : (
-          <img src={StarEmpty} key={ratingElem.toString()} alt="étoile vide" />
+          <img
+            src={StarEmpty}
+            key={ratingElem.toString()}
+            alt="étoile vide"
+            className="starsSize"
+          />
         )
       )}
     </div>

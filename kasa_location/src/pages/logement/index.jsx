@@ -51,7 +51,7 @@ function Logement() {
           <Rate logement={logement.rating} />
         </div>
       </div>
-      <div className="centerAccordions">
+      <div className="centerAccordionsLogement">
         <div className="accordions accordionsLogement">
           <div className="accordionDescription">
             <Accordion
@@ -67,8 +67,8 @@ function Logement() {
               content={
                 <ul className="equipementAccordion">
                   {/* Création d'un li pour chaque "equipments"*/}
-                  {logement.equipments.map((li, element) => (
-                    <li key={element + id}>{li}</li>
+                  {logement.equipments.map((li, index) => (
+                    <li key={index + id}>{li}</li>
                   ))}
                 </ul>
               }

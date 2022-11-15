@@ -51,12 +51,14 @@ a:visited {
     height: 47px;
   }
   .navHome {
-    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     font-size: 15px;
+  }
+  .navAPropos {
+    padding-left: 20px;
   }
   .navAcceuil {
     margin-right: 0px;

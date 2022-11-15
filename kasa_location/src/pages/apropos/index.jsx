@@ -1,5 +1,5 @@
 import React from 'react'
-import imgApropos from '../../assets/imageApropos.png'
+//import imgApropos from '../../assets/imageApropos.png'
 import '../../styles/aproposPage.css'
 import Accordion from '../../components/accordion'
 import '../../styles/accordion.css'
@@ -8,7 +8,7 @@ function Apropos() {
   return (
     <section className="containerApropos">
       <div className="bannerApropos">
-        <img src={imgApropos} className="imgBanner" alt="Un paysage" />
+        <span className="imgBanner"></span>
       </div>
       <div className="centerAccordions">
         <div className="accordions">

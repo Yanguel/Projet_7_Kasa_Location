@@ -15,6 +15,9 @@
 }
 .containerError {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logoError {
   margin-top: 10%;
@@ -31,4 +34,31 @@
 .linktext {
   font-family: Montserrat;
   font-size: 18px;
+}
+
+/* Responsive Tablette */
+@media screen and (max-width: 1023px) {
+  .error {
+    font-size: 150px;
+  }
+  .textError {
+    font-size: 25px;
+  }
+}
+
+/* Responsive Téléphone */
+@media screen and (max-width: 767px) {
+  .error {
+    font-size: 96px;
+    margin-top: 100px;
+  }
+  .textError {
+    font-size: 18px;
+  }
+  .textError {
+    width: 70%;
+  }
+  .linktext {
+    font-size: 14px;
+  }
 }

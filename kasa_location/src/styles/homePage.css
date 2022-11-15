@@ -9,6 +9,7 @@
   font-family: Montserrat;
   background-color: #f6f6f6;
   margin: 0px 80px 80px 80px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -60,6 +61,11 @@ a:visited {
   position: absolute;
 }
 
+/* Responsive Tablette */
+@media screen and (max-width: 1023px) {
+}
+
+/* Responsive Téléphone */
 @media screen and (max-width: 767px) {
   .App {
     width: auto;
@@ -83,7 +89,8 @@ a:visited {
   }
   .cards {
     justify-content: center;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
   }
 }
