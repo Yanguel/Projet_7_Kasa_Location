@@ -1,5 +1,9 @@
 import React from 'react'
+
+// Import du CSS lié à l'accordion
 import '../../styles/accordion.css'
+
+// fonction/Hook permettant d'ajouter l'état local à des fonctions composants
 import { useState } from 'react'
 ;<script
   src="https://kit.fontawesome.com/e4ab2d9fc1.js"

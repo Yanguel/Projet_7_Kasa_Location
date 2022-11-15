@@ -1,8 +1,12 @@
 import React from 'react'
+
+// Import des images
 import Star from '../../assets/Star.png'
 import StarEmpty from '../../assets/StarEmpty.png'
 
+//Fonction permettant de calculer le nombre d'étoile vite et remplit
 function Rate({ logement }) {
+  //Création du tableau du nombre maximum d'étoile
   const arrayRating = [1, 2, 3, 4, 5]
   return (
     <div className="stars">
@@ -10,7 +14,7 @@ function Rate({ logement }) {
         logement >= ratingElem ? (
           <img
             src={Star}
-            key={ratingElem.toString()}
+            key={ratingElem.toString()} /* "toString" renvoi une chaine de caractère*/
             alt="étoile rempli"
             className="starsSize"
           />

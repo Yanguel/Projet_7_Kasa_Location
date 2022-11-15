@@ -1,9 +1,12 @@
 import React from 'react'
+// import du CSS lié aux carrousel
 import '../../styles/carrousel.css'
+// import des images "flèches"/switch
 import leftArrow from '../../assets/vectorleft.png'
 import rightArrow from '../../assets/vectorright.png'
 
-export default function BtnSlider({ direction, moveSlide }) {
+// Fonction permettant de gerer le comportement des fleches
+function BtnSlider({ direction, moveSlide }) {
   return (
     <div
       onClick={moveSlide}
@@ -17,3 +20,4 @@ export default function BtnSlider({ direction, moveSlide }) {
     </div>
   )
 }
+export default BtnSlider

@@ -1,5 +1,10 @@
+// Import du logo de l'agence.
 import logoKasaWhite from '../../assets/logoWhite.png'
+
+//Import du CSS lié au footer
 import '../../styles/footer.css'
+
+// Function permettant de créer le footer présent sur toutes les pages
 function Footer() {
   return (
     <footer>
