@@ -61,4 +61,7 @@
   .linktext {
     font-size: 14px;
   }
+  #root {
+    min-width: 375px;
+  }
 }

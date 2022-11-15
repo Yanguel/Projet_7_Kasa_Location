@@ -24,6 +24,16 @@ export default function Slider() {
       setSlideIndex(logement.pictures.length)
     }
   }
+  // Condition afin d'afficher ou non l'index des photos.
+  const indexPictures =
+    logement.pictures.length > 1 ? (
+      <p>
+        {slideIndex} / {logement.pictures.length}
+      </p>
+    ) : (
+      ''
+    )
+
   return (
     <div className="container-slider">
       {logement.pictures.map((obje, index) => {
@@ -34,6 +44,7 @@ export default function Slider() {
             }
             key={id + index}
           >
+            <span className="indexPictures">{indexPictures}</span>
             <img
               src={logement.pictures[index]}
               alt={`Logement ${logement.title}`}

@@ -9,3 +9,18 @@
   display: flex;
   align-items: flex-end;
 }
+/* Responsive Tablette */
+@media screen and (max-width: 1023px) {
+}
+
+/* Responsive Téléphone */
+@media screen and (max-width: 767px) {
+  .card {
+    margin: 10px 20px 10px 20px;
+    width: 335px;
+    height: 255px;
+  }
+  #root {
+    min-width: 374px;
+  }
+}

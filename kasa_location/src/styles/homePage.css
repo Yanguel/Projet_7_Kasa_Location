@@ -28,11 +28,11 @@
 .titleCard {
   position: absolute;
   margin-left: 20px;
-  color: #ffffff;
   width: 250px;
+  color: #ffffff;
 }
 a:visited {
-  color: #ff6060;
+  color: white;
 }
 .bannerImg {
   width: auto;
@@ -42,18 +42,26 @@ a:visited {
   margin: 50px 80px 50px 80px;
   border-radius: 25px;
   position: relative;
+  background-image: url(../assets/imageHome.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.imgBannerHome {
+  width: 100%;
+  height: 223px;
+}
+
 .imgHome {
   border-radius: 25px;
   width: 100%;
   height: 223px;
   object-fit: cover;
-  filter: brightness(70%);
 }
 .textImg {
   font-family: Montserrat;
   top: 20%;
-  color: #ffff;
+  color: white;
   font-size: 48px;
   text-align: center;
 }
@@ -74,23 +82,31 @@ a:visited {
     flex-direction: column;
   }
   .bannerImg {
-    margin: 25px;
+    margin: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     justify-content: center;
+  }
+  .imgBannerHome {
+    width: 100%;
+    height: 111px;
   }
   .divTextImg {
     margin-left: 10px;
   }
   .textImg {
     top: 0px;
-    font-size: 25px;
+    font-size: 24px;
   }
   .cards {
     justify-content: center;
     margin-left: 0px;
     margin-right: 0px;
+    padding: 0px;
     background-color: white;
+  }
+  #root {
+    min-width: 374px;
   }
 }

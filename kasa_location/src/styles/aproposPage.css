@@ -53,6 +53,9 @@
 
 /* Responsive Téléphone */
 @media screen and (max-width: 767px) {
+  #root {
+    min-width: 375px;
+  }
   .bannerApropos {
     margin: 20px 20px 20px 20px;
     background-image: url(../assets/banniereAproposPhone.png) !important;

@@ -18,7 +18,6 @@ function Logement() {
 
   // Cette variable me permet de chercher un élement lié à l'id utilisé dans le format json.
   const logement = data.find((elt) => elt.id === id)
-
   //////////////////
 
   return logement ? (
