@@ -1,7 +1,7 @@
 // Import du fichier css lié à la page Error
 import '../../styles/errorPage.css'
 
-// Import de la fonction Link qui gere les hyperliens sous React.
+// Import de la fonction Link qui gère les hyperliens sous React.
 import { Link } from 'react-router-dom'
 
 // Création de la fonction Error afin de créer la page Error

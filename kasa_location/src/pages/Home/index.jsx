@@ -6,7 +6,7 @@ import Card from '../../components/Card'
 import '../../styles/homePage.css'
 import '../../styles/normalize.css'
 
-// Function gérant l'affichage de la page d'acceuil.
+// Fonction gérant l'affichage de la page d'acceuil.
 function Home() {
   return (
     <div className="App">
@@ -17,7 +17,7 @@ function Home() {
         </div>
       </section>
       <section className="cards">
-        {/* Utilisation de map afin de récuperer les éléments souhaiter dans le fichier json */}
+        {/* Utilisation de map afin de récuperer les éléments souhaités dans le fichier json */}
         {data.map((logement, index) => {
           return (
             <Card

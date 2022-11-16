@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 // Import du fichier json mis à disposition
 import data from '../../data/data.json'
-//Import de la fonction "btnSlider" qui gere les switch du carrousel
+//Import de la fonction "btnSlider" qui gère les switch du carrousel
 import BtnSlider from './btnSlider'
 
 // Fonction permettant

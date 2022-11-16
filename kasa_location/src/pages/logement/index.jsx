@@ -1,4 +1,4 @@
-// Permet d'accéder aux paramètres passé dans l'URL
+// Permet d'accéder aux paramètres passés dans l'URL
 import { useParams } from 'react-router-dom'
 // Import du fichier json mis à disposition
 import data from './../../data/data.json'
@@ -31,7 +31,7 @@ function Logement() {
           <h1 className="logementTitle"> {logement.title} </h1>
           <p className="logementLocation">{logement.location}</p>
           <ul className="tags">
-            {/* Création d'un li pour chaque tags */}
+            {/* Création d'un li pour chaque tag */}
             {logement.tags.map((li, element) => (
               <li key={element + id} className="liTags">
                 {li}
@@ -68,7 +68,7 @@ function Logement() {
               title="Equipement"
               content={
                 <ul className="equipementAccordion">
-                  {/* Création d'un li pour chaque "equipments"*/}
+                  {/* Création d'un li pour chaque "equipement"*/}
                   {logement.equipments.map((li, index) => (
                     <li key={index + id}>{li}</li>
                   ))}
