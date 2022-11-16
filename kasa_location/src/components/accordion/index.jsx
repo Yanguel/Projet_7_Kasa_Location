@@ -14,12 +14,16 @@ import { useState } from 'react'
 
 //Fonction permettant de creer l'ouverture et fermeture des accordions ainsi que des icones.
 function Accordion({ title, content }) {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false) // Par défaut ils seront fermés.
+
+  // Fonction qui active l'élément
   const handleToggle = (e) => {
     setActive(!active)
   }
+
   return (
     <div className={`accordion ${active && 'active'}`}>
+      {/* Au click active l'accordeons*/}
       <div className="accordionTitle" onClick={handleToggle}>
         {title}
         <span className="accordionIcon">
