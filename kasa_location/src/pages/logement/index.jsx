@@ -1,16 +1,19 @@
+// Permet d'accéder aux paramètres passé dans l'URL
 import { useParams } from 'react-router-dom'
+// Import du fichier json mis à disposition
 import data from './../../data/data.json'
+// Import de la page Error
 import Error from '../Error'
+
+// Import des différents elements utiles dans la page logement.
+import Accordion from '../../components/accordion'
+import Carrousel from '../../components/carrousel'
+import Rate from '../../components/Stars/'
+
+//Import des différents fichiers CSS
 import '../../styles/normalize.css'
 import '../../styles/logement.css'
-import Accordion from '../../components/accordion'
 import '../../styles/accordion.css'
-import Slider from '../../components/carrousel'
-import Rate from '../../components/Stars/'
-;<script
-  src="https://kit.fontawesome.com/e4ab2d9fc1.js"
-  crossorigin="anonymous"
-></script>
 
 function Logement() {
   // Je récupere l'id dans l'URL
@@ -22,7 +25,7 @@ function Logement() {
 
   return logement ? (
     <section id="sectionLogement">
-      <Slider />
+      <Carrousel />
       <div className="titleAndHost">
         <div className="titleAndLocation">
           <h1 className="logementTitle"> {logement.title} </h1>
@@ -77,7 +80,7 @@ function Logement() {
       </div>
     </section>
   ) : (
-    <Error />
+    <Error /> /* Si l'url de la page logement est inconnu ALORS afficher la page "Error" */
   )
 }
 

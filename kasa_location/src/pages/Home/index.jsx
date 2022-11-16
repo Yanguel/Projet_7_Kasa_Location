@@ -1,8 +1,12 @@
+// Import le fichier json mis à disposition.
 import data from './../../data/data.json'
+// Import le composant gérant les Cartes des logements.
 import Card from '../../components/Card'
+// Import des différents fichier css lié à la page.
 import '../../styles/homePage.css'
 import '../../styles/normalize.css'
 
+// Function gérant l'affichage de la page d'acceuil.
 function Home() {
   return (
     <div className="App">
@@ -13,13 +17,14 @@ function Home() {
         </div>
       </section>
       <section className="cards">
-        {data.map((property, index) => {
+        {/* Utilisation de map afin de récuperer les éléments souhaiter dans le fichier json */}
+        {data.map((logement, index) => {
           return (
             <Card
               key={index}
-              id={property.id}
-              image={property.cover}
-              title={property.title}
+              id={logement.id}
+              image={logement.cover}
+              title={logement.title}
             />
           )
         })}

@@ -19,14 +19,14 @@
 }
 .navHome {
   font-size: 24px;
+  color: #ff6060;
+  font-family: Montserrat;
 }
 .navAcceuil {
-  font-family: Montserrat;
   margin-right: 60px;
   text-decoration: none;
 }
 .navAPropos {
-  font-family: Montserrat;
   text-decoration: none;
 }
 .navAcceuil:hover {
@@ -34,6 +34,9 @@
 }
 .navAPropos:hover {
   text-decoration: underline;
+}
+a {
+  color: #ff6060;
 }
 a:visited {
   color: #ff6060;

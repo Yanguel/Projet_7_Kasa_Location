@@ -5,10 +5,14 @@ import '../../styles/accordion.css'
 
 // fonction/Hook permettant d'ajouter l'état local à des fonctions composants
 import { useState } from 'react'
+
+// Récupération des l'icones voulu via fontawesomes
 ;<script
   src="https://kit.fontawesome.com/e4ab2d9fc1.js"
   crossorigin="anonymous"
 ></script>
+
+//Fonction permettant de creer l'ouverture et fermeture des accordions ainsi que des icones.
 function Accordion({ title, content }) {
   const [active, setActive] = useState(false)
   const handleToggle = (e) => {

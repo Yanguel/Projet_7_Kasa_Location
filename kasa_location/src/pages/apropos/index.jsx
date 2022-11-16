@@ -1,9 +1,13 @@
 import React from 'react'
-//import imgApropos from '../../assets/imageApropos.png'
+
+// Import des fichier CSS lié à la page "Apropos"
 import '../../styles/aproposPage.css'
-import Accordion from '../../components/accordion'
 import '../../styles/accordion.css'
-// import Vectordown from '../../assets/Vectordown.png'
+
+// Import du composant accordion de la page
+import Accordion from '../../components/accordion'
+
+// Function permettant la mise en place de la page "A-Propos"
 function Apropos() {
   return (
     <section className="containerApropos">
@@ -12,6 +16,7 @@ function Apropos() {
       </div>
       <div className="centerAccordions">
         <div className="accordions">
+          {/* Création des quatres différents contenus des accordions */}
           <Accordion
             title={<p className="titleAccordion">Fiabilité</p>}
             content={

@@ -11,7 +11,7 @@ import data from '../../data/data.json'
 import BtnSlider from './btnSlider'
 
 // Fonction permettant
-function Slider() {
+function Carrousel() {
   let { id } = useParams()
 
   // Cette variable me permet de chercher un élement lié à l'id utilisé dans le format json.
@@ -83,4 +83,4 @@ function Slider() {
     </div>
   )
 }
-export default Slider
+export default Carrousel
