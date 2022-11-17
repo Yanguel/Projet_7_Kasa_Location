@@ -5,13 +5,13 @@ import Star from '../../assets/Star.png'
 import StarEmpty from '../../assets/StarEmpty.png'
 
 //Fonction permettant de calculer le nombre d'étoile vide et remplit
-function Rate({ logement }) {
+function Rate({ logementRating }) {
   //Création du tableau du nombre maximum d'étoile
   const arrayRating = [1, 2, 3, 4, 5]
   return (
     <div className="stars">
       {arrayRating.map((ratingElem) =>
-        logement >= ratingElem ? (
+        logementRating >= ratingElem ? (
           <img
             src={Star}
             key={ratingElem.toString()} /* "toString" renvoi une chaine de caractère*/

@@ -50,7 +50,7 @@ function Logement() {
               className="portraitHote"
             ></img>
           </div>
-          <Rate logement={logement.rating} />
+          <Rate logementRating={logement.rating} />
         </div>
       </div>
       <div className="centerAccordionsLogement">

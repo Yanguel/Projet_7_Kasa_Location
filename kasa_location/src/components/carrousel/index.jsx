@@ -23,6 +23,7 @@ function Carrousel() {
   // Condition qui permet d'ajouter ou non une quantité à l'élément "suivant"
   const nextSlide = () => {
     if (slideIndex !== logement.pictures.length) {
+      // met à jour le tableau renvoyé par useState et rajoute 1
       setSlideIndex(slideIndex + 1)
     } else if (slideIndex === logement.pictures.length) {
       setSlideIndex(1)

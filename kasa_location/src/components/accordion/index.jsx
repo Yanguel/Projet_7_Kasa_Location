@@ -12,7 +12,7 @@ import { useState } from 'react'
   crossorigin="anonymous"
 ></script>
 
-//Fonction permettant de creer l'ouverture et fermeture des accordions ainsi que des icones.
+//Fonction permettant de creer les accordions ainsi que les icones.
 function Accordion({ title, content }) {
   const [active, setActive] = useState(false) // Par défaut ils seront fermés.
 

@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import Error from './pages/Error'
 import Apropos from './pages/apropos'
 import Logement from './pages/logement'
+// Importe les différents composants
 import Header from './components/Header'
 import Footer from './components/Footer'
 
